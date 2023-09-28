@@ -5,8 +5,10 @@ buttons.forEach((button) => {
   button.addEventListener("click", () => {
     if (this.id === "reset") {
       colorCanvasWhite();
+      return;
     } else {
-      color = this.id;
+      color = button.id;
+      console.log(color);
     }
   });
 });
@@ -40,12 +42,15 @@ function removeDivInCanvas() {
 
 function coloring() {
   if (color === "random") {
-    this.style.backgroundColor = `hsl(${Math.random() * 360}, 50%, 100%)`;
+    this.style.backgroundColor = `hsl(${Math.floor(
+      Math.random() * 360
+    )}, 50%, 100%)`;
   } else if (color === "eraser") {
     this.style.backgroundColor = "white";
   } else {
     this.style.backgroundColor = color;
   }
+  console.log(this.style.backgroundColor);
 }
 
 function colorCanvasWhite() {
