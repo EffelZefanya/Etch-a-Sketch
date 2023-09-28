@@ -8,14 +8,13 @@
 }
 
 .canvas {
-    display: flex;
-    width: 320px;
-    max-width: 100%;
-    flex-wrap: wrap;
+    display: grid;
+    gap: 1px; /* Adjust gap as needed */
+    background-color: #ddd;
 }
 
 .canvas>div {
-    padding: 5px;
-    box-sizing: border-box;
-    border: 1px solid #000;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    aspect-ratio: 1;
 }
