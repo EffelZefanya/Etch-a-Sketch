@@ -1,22 +1,27 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
 }
 
 .canvas {
-    display: grid;
-    width: 50%;
-    max-width: 50%;
-    gap: 1px; /* Adjust gap as needed */
-    background-color: #ddd;
+  display: grid;
+  width: 50%;
+  max-width: 50%;
+  gap: 1px; /* Adjust gap as needed */
+  background-color: #ddd;
 }
 
-.canvas>div {
-    background-color: #fff;
-    border: 1px solid #aaa;
-    aspect-ratio: 1;
+.canvas > div {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  aspect-ratio: 1;
+}
+
+#color-picker{
+    height: 20px;
+    width: 20px;
 }

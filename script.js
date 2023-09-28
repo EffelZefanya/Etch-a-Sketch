@@ -18,6 +18,7 @@ const slider = document.querySelector("#sizeRange");
 
 const sizeDisplay = document.querySelector("#sizeDisplay");
 
+
 let size = slider.value;
 sizeDisplay.textContent = `Size of Canvas is: ${size}`;
 canvas.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
