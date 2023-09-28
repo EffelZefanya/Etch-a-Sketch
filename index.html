@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
     <script src="script.js" defer></script>
-    <title>Etch a\ketch</title>
-</head>
-<body> 
-    
-</body>
+    <title>Etch a Sketch</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Etch a Sketch</h1>
+      <div class="canvas"></div>
+      <br />
+      <div class="buttons">
+        <button id="black-button">Black</button>
+        <button id="random-butotn">Random</button>
+        <button id="reset-button">Reset</button>
+      </div>
+      <div class="sizeOfCanvas">
+        <input
+          type="range"
+          min="1"
+          max="64"
+          value="16"
+          class="slider"
+          id="sizeRange"
+        />
+        <div id="sizeDisplay"></div>
+      </div>
+    </div>
+  </body>
 </html>

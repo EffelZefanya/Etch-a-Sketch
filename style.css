@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.canvas {
+    display: flex;
+    width: 320px;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.canvas>div {
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+}
