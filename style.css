@@ -9,6 +9,8 @@
 
 .canvas {
     display: grid;
+    width: 50%;
+    max-width: 50%;
     gap: 1px; /* Adjust gap as needed */
     background-color: #ddd;
 }
