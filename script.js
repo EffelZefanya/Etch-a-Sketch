@@ -3,9 +3,8 @@ let color = "black";
 const buttons = document.querySelectorAll("button");
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
-    if (this.id === "reset") {
-      colorCanvasWhite();
-      return;
+    if (button.id === "reset") {
+      resetCanvasColorToWhite();
     } else {
       color = button.id;
       console.log(color);
@@ -53,11 +52,9 @@ function coloring() {
   console.log(this.style.backgroundColor);
 }
 
-function colorCanvasWhite() {
-  const squaresInCanvas = canvas.querySelectorAll("div");
-  squaresInCanvas.forEach((div) => {
-    div.style.backgroundColor = "white";
-  });
+function resetCanvasColorToWhite(){
+  removeDivInCanvas();
+  drawCanvas(size);
 }
 
 function drawCanvas(size) {
