@@ -39,11 +39,13 @@ function removeDivInCanvas() {
   });
 }
 
+function pickRandomNumberFromRange(start, end) {
+  return Math.floor(Math.random() * end) + start;
+}
+
 function coloring() {
   if (color === "random") {
-    this.style.backgroundColor = `hsl(${Math.floor(
-      Math.random() * 360
-    )}, 50%, 100%)`;
+    this.style.backgroundColor = `hsl(${pickRandomNumberFromRange(0, 360)}, ${pickRandomNumberFromRange(15, 85)}%, ${pickRandomNumberFromRange(15, 85)}%)`;
   } else if (color === "eraser") {
     this.style.backgroundColor = "white";
   } else {
@@ -52,7 +54,7 @@ function coloring() {
   console.log(this.style.backgroundColor);
 }
 
-function resetCanvasColorToWhite(){
+function resetCanvasColorToWhite() {
   removeDivInCanvas();
   drawCanvas(size);
 }
